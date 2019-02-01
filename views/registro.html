@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ARSA 2019</title>
+    <link rel="stylesheet" href="../styles/bootstrap.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <script src="../javascript/validation.js"></script>
+</head>
+<body>
+    <div class="fix">
+        <div class="login-container">
+            <div class="col-12 login-form">
+                <form id="form-register" action="http://localhost:3000/register" onsubmit="return validateFields('Registro')" method="POST">
+                    <h3>Registro</h3>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="input-user-registro" name="inputUser" placeholder="Nombre de usuario *" value="" onkeypress="validate(event, this)" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="input-password-registro" name="inputPassword" placeholder="Contraseña *" value="" onkeypress="validate(event, this)" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-success" style="float:left;"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
